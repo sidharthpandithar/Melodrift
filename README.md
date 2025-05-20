@@ -38,7 +38,7 @@ Melodrift will automatically match the song and its thumbnail based on the song 
 ---
 
 ## 📸 Preview
-
+![Melodrift UI Preview](Screenshots/preview.png)
 
 
 ---
