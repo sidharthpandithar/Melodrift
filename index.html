@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melodrift</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="leftnav">
+            <img class="invert logo" src="assets/logo.svg" alt="">
+        </div>
+        <div class="centernav">
+            <div class="search">
+                <img class="invert resizer" src="assets/search.svg" alt="">
+            </div>
+            <input type="text" class="searchbar" id="searchInput">
+        </div>
+    </nav>
+
+    <div class="container flex">
+        <div class="left flex">
+            <div class="library flex">
+                <p id="yl"><strong>Your Library</strong></p>
+                <div class="songslist">
+                    <ul class="songsDetail">
+                        
+
+                    </ul>
+                </div>
+            </div>
+                
+        </div>
+
+        <div class="rightbox flex">
+            <div class="songSelector">
+                <h1>Your Songs</h1>
+                <div class="cardContainer">
+                        
+                </div>
+            </div>
+            <div class="playbar">
+                <div class="seekbar">
+
+                    <div class="circle">
+
+                    </div>
+                </div>
+                <div class="abovebar">
+                    <div class="songinfo">
+
+                    </div>
+                    <div class="interactButtons invert">
+                        <img id="prev" src="assets/prev.svg" alt="">
+                        <img class="playButton" id="play" src="assets/playicon.svg" alt="">
+                        <img id="next" src="assets/next.svg" alt="">
+                    </div>
+                    <div class="songtime">
+
+                    </div>
+                    <div class="volume">
+                        <div class="volumeimg">
+                            <img src="assets/volume.svg" class="invert" alt="">
+                        </div>
+                        <div class="range">
+                            <input type="range" name="volume" id="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+

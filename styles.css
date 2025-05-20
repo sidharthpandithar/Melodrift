@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+    position: relative;
+}
+
+.left {
+    width: 22vw;
+    margin-left: 5px;
+    background-color: rgb(255 255 255 / 0.08);
+    flex-direction: column;
+    border-radius: 10px;
+    height: 90vh;
+    top: 0;
+    left: 0;
+    position: relative;
+}
+.songslist{
+    position: absolute;
+    top: 7vh;
+    left: 25px;
+    height: 80vh;
+    overflow: scroll;
+    width: 20vw;
+    
+
+}
+.songDetail{
+    display: flex;
+    flex-wrap: wrap;
+}
+.song{
+    padding-top: 10px;
+    list-style-type: decimal;  
+}
+.rightbox {
+    width: 77vw;
+    margin-left: 5px;
+    max-height: 90vh;
+    background-color: rgb(255 255 255 / 0.08);
+    border-radius: 10px;
+    top: 6vh;
+    right: 0vh;
+    position: relative;
+    top: 0;
+
+}
+
+.navbar {
+    height: 6vh;
+    position: sticky;
+    top: 0vh;
+    padding-bottom: 5px;
+    background-color: black;
+    display: flex;
+    width: 100vw;
+    z-index: 5;
+}
+
+.playlist {
+    background-color: rgb(255 255 255 / 0.1);
+    margin: 40px 10px 20px 10px;
+    border-radius: 5px;
+    padding: 20px;
+    position: absolute;
+    top: 45vh;
+    width: 19vw;
+}
+
+
+
+.logo {
+    margin: 15px 0px 5px 25px;
+    height: 30px;
+}
+
+.title1 {
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+.desc1 {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.btn1 {
+    margin-top: 15px;
+    width: 120px;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 20px;
+    border: 0;
+    background: white;
+}
+
+
+
+#yl {
+    padding: 20px 0px 0px 15px;
+    font-size: 14px;
+    display: flex;
+    width: 200px;
+}
+
+.library {
+    width: 22vw;
+}
+.cardContainer{
+    margin-top: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 25px;
+}
+
+.info{
+    border: 2px solid rgb(255 255 255 / 0.08);
+    border-radius: 10px;
+    height: 8vh;
+    display: flex;
+    margin: 10px;
+    cursor: pointer;
+
+}
+.info:hover{
+    border: 2px solid rgba(201, 192, 192);
+    transform: scale(1.02);
+    border-radius: 10px;
+    height: 8vh;
+    display: flex;
+    margin: 10px;
+    cursor: pointer;
+    .musicImg {
+        opacity: 1;
+    }
+    .infomusiclibrary{
+        opacity: 1;
+    }
+    .playNowClass{
+        opacity: 1;
+    }
+}
+.activeinfo {
+    border: 2px solid rgba(201, 192, 192);
+    transform: scale(1.02);
+    border-radius: 10px;
+    height: 8vh;
+    display: flex;
+    margin: 10px;
+    cursor: pointer;
+    .musicImg {
+        opacity: 1;
+    }
+    .infomusiclibrary{
+        opacity: 1;
+    }
+    .playNowClass{
+        opacity: 1;
+    }
+    
+}
+.musicImg {
+    width: 45px;
+    padding: 10px 10px;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.5;
+   
+}
+.infomusiclibrary{
+    display: flex;
+    gap: 1px;
+    flex-direction: column;
+    align-self: center;
+    width: 15vw;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    opacity: 0.5;
+}
+.info span {
+    align-self: center;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 15px;
+    padding-bottom: 10px
+}
+.playNowClass{
+        opacity: 0.5;
+    }
+.thumbnailimg{
+    min-width: 157.5px;
+    min-height: 157.5px;
+    object-fit: cover;
+    border-radius: 20px;
+}
