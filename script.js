@@ -53,7 +53,7 @@ async function main() {
                             <img class="musicImg invert" src="assets/music.svg" alt="" >
                             <div class="infomusiclibrary">
                                 <div class="songname"> ${song.replaceAll("%20", " ").replace(".mp3", "").split("-")[0]}</div>
-                                <div class="artist">${song.replaceAll("%20", " ").replace(".mp3", "").split("-")[1]}</div>
+                                <div class="artist">${song.replaceAll("%20", " ").replace(".mp3", "").replaceAll("%2C", "").split("-")[1]}</div>
                             </div>
                                 <span class="playNowClass" id = "playingnow">Play Now</span>
                                 <img class="invert playNow musicImg" id = "playBtn" src="assets/playicon.svg" alt="">
@@ -71,7 +71,7 @@ async function main() {
                         <img class="thumbnailimg" src="/Melodrift/assets/thumbnail/${song.replaceAll("%20", " ").replace(".mp3", "").split("-")[0].trim()}.jpeg " alt="">
                         <p class="songName carddesc">${song.replaceAll("%20", " ").replace(".mp3", "").split("-")[0]}
                         <p>
-                        <p class="singerDetail carddesc">${song.replaceAll("%20", " ").replace(".mp3", "").split("-")[1]}</p>
+                        <p class="singerDetail carddesc">${song.replaceAll("%20", " ").replace(".mp3", "").replaceAll("%2C", "").split("-")[1]}</p>
                     </div> </div>`
     }
 
